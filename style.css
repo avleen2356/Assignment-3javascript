@@ -1,0 +1,112 @@
+/* Importing the font from google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Cevae&display=swap');
+
+/*Adding styles to the css file*/
+
+/* Resetting the default margin and padding */
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  /* Adding font family to the body */
+body {
+    font-family: 'Cevae', sans-serif;
+    background-color: #8065e0;
+}
+
+  /* Styling for the container */
+    .container {
+    width: 500px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+  /* Styling for the topic name */
+    .topic-name {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+  /* Styling for the input container */
+    .input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+  /* Styling for the input field */
+    .input-container input[type="text"] {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.477);/* Adding shadow to the input field */
+}
+
+    .input-container input[type="text"]:first-child {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+  /* Styling for the  both add and clear buttons */
+    #addTaskButton, #clearTaskListButton {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    background-color: #67e4e2;/* Adding background color to the buttons */
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.651);/* Adding shadow to the buttons */
+}
+
+  /* Adding Hover effect for the buttons */
+    #addTaskButton:hover, #clearTaskListButton:hover {
+    background-color: #67e4e2;/* Changing the background color on hover */
+}
+
+    #taskListContainer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    #taskListContainer li {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+    #taskListContainer li:last-child {
+    border-bottom: none;
+}
+    #taskListContainer li input[type="checkbox"] {
+    transform: scale(2);
+    margin-right: 10px;
+}
+
+    #taskListContainer li span {
+    font-size: 30px;
+}
+
+  /* Styling for the delete button */
+    .delete-btn {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    background-color:#67e4e2;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+    .delete-btn:hover {
+    background-color:#67e4e2;
+}
